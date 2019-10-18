@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            color:red;
+            font-size: 20px;
+            position: absolute;
+            width:100px;
+            border:1px solid red;
+            height:20px;
+            left:0;top:0;right:0;bottom: 0;
+            margin: auto;
+        }
+        table{
+            border:1px solid #000;
+            border-collapse: collapse;
+            width:500px;
+        }
+        td{
+            border:1px solid #000;
+        }
+
+    </style>
+    <script>
+
+        //var a=10.22
+        //算数运算 + - * / %
+        //逻辑运算 ||  &&  ！
+        // 赋值运算
+        // 比较运算符  == >  <
+
+        // window.onload=function (ev) {
+        //     var div=document.querySelector("div");
+        //     div.onclick=function (ev2) {
+        //         this.style.color="green";
+        //     }
+        //     div.ondblclick=function (ev2) {
+        //         this.style.fontSize="100px"
+        //     }
+        // }
+
+        //流程控制  顺序执行  选择执行  循环执行
+
+        window.onload=function (ev) {
+            var div=document.querySelector("div");
+            var num=9
+            if(num>10){
+               div.style.color="red"
+            }else{
+                div.style.color="green";
+            }
+        }
+
+        
+        function table(row,col) {
+            document.write("<table>");
+            for(var i=0;i<row;i++){
+                document.write("<tr>");
+                for(var j=0;j<col;j++){
+                    document.write("<td>"+j+"</td>")
+                }
+                document.write("</tr>");
+            }
+            document.write("</table>");
+        }
+
+       table(10,10)
+       table(5,5)
+       table(3,3)
+       table(20,20)
+
+    </script>
+
+</head>
+<body>
+<table>
+
+</table>
+
+
+</body>
+</html>
